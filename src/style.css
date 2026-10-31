@@ -1,0 +1,39 @@
+.lp-image-crop {
+  line-height: 0;
+  overflow: hidden;
+}
+.lp-image-crop__selection {
+  border: 2px solid #fff;
+  outline: 1px solid #0f172a;
+  box-shadow: 0 0 0 9999px #0006;
+  cursor: move;
+}
+.lp-image-crop__selection:focus-visible {
+  outline: 3px solid #2563eb;
+}
+.lp-image-crop__handle {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: 1px solid #0f172a;
+  border-radius: 2px;
+  background: #fff;
+}
+.lp-image-crop__handle--nw,
+.lp-image-crop__handle--se {
+  cursor: nwse-resize;
+}
+.lp-image-crop__handle--ne,
+.lp-image-crop__handle--sw {
+  cursor: nesw-resize;
+}
+.lp-image-crop__handle:focus-visible {
+  outline: 3px solid #2563eb;
+}
+.lp-image-crop [role='alert'] {
+  display: block;
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  color: #b91c1c;
+}
